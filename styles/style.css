@@ -1,21 +1,64 @@
 body {
-    padding : 0;
-    margin: 0;
-    font-family: "Libre Baskerville", serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
 }
-header {
-    position: fixed;
-    background-color: #eeebebbd;
+nav {
+  position: fixed;
+  /* background-color: #36454F;
+     */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(54, 69, 79, 1) 53%,
+    rgba(24, 35, 56, 0.7233018207282913) 100%
+  );
 }
 #webka {
-    color: #3dd60b;
-    text-shadow: 2px;
+  color: #3dd60b;
+  text-shadow: 2px;
 }
-#webka, #holic {
-    font-weight: 900;
-    font-family: "Dhurjati", sans-serif;  
-    font-size: xxx-large;
+#webka,
+#holic {
+  font-weight: 900;
+  font-family: "Dhurjati", sans-serif;
+  font-size: xxx-large;
 }
-.icon i {
- font-size: 30px;
+i {
+  font-size: 30px;
+  color: white;
+}
+li {
+  list-style: none;
+}
+@media (max-width: 576px) {
+  nav {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  img {
+    max-width: 40% !important;
+  }
+}
+@media (min-width: 576px) {
+  .logo {
+    justify-content: center !important;
+  }
+}
+a {
+  color: white;
+  text-decoration: none;
+  animation-timing-function: ease;
+}
+a:hover {
+  animation: mymove 4s;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
 }
